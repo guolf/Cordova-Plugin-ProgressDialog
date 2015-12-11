@@ -4,7 +4,7 @@
 安装：
 
 ```
-cordova plugin add https://github.com/guolf/Plugin-SoapHelper-ProgressDialog.git
+cordova plugin add https://github.com/guolf/Cordova-Plugin-ProgressDialog.git
 
 ```
 

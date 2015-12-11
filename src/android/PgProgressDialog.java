@@ -2,10 +2,11 @@ package cn.guolf.cordova.plugins;
 
 import android.app.ProgressDialog;
 
-import org.apache.cordova.api.CallbackContext;
-import org.apache.cordova.api.CordovaPlugin;
-import org.apache.cordova.api.PluginResult;
-import org.json.*;
+import org.apache.cordova.CallbackContext;
+import org.apache.cordova.CordovaPlugin;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 public class PgProgressDialog extends CordovaPlugin {
 
