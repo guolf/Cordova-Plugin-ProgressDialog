@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="cordova-plugin-progressdialog"
+        version="1.0.0">
+
+  <name>ProgressDialog</name>
+
+  <description>
+    ProgressDialog
+  </description>
+
+  <author>guolf</author>
+
+  <license>Apache 2.0</license>
+
+  <keywords>Phoengap,Cordova,ProgressDialog</keywords>
+
+  <repo>https://github.com/guolf/Cordova-Plugin-ProgressDialog.git</repo>
+
+  <issue>https://github.com/guolf/Cordova-Plugin-ProgressDialog/issues</issue>
+
+  <engines>
+    <engine name="cordova" version=">=3.0.0"/>
+  </engines>
+
+  <js-module src="www/PgProgressDialog.js" name="ProgressDialog">
+    <clobbers target="window.plugins.ProgressDialog" />
+  </js-module>
+
+  <!-- android -->
+  <platform name="android">
+
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="ProgressDialog">
+        <param name="android-package" value="cn.guolf.cordova.plugins.PgProgressDialog" />
+      </feature>
+    </config-file>
+
+    <source-file src="src/android/PgProgressDialog.java" target-dir="src/cn/guolf/cordova/plugins"/>
+  </platform>
+  
+</plugin>
